@@ -7,9 +7,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: process.env.NODE_ENV === "development" 
-      ? "http://localhost:5173" 
-      : "https://chat-app-7kgl.onrender.com",
+    origin: "https://chat-app-7kgl.onrender.com",
     credentials: true
   },
 });
